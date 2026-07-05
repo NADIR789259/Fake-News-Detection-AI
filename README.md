@@ -25,7 +25,15 @@ A machine learning web app that classifies news articles as **Real** or **Fake**
 
 ## 🖥️ Screenshots
 
-_Add 1–2 screenshots or a short GIF of the app here (drag & drop into this section on GitHub, or place images in a `screenshots/` folder and reference them, e.g. `![App Screenshot](screenshots/demo.png)`)._
+### Interface
+![App Interface](screenshots/![alt text](interface.png))
+
+### Real News Detection
+![Real News Result](screenshots/![alt text](<Real News.png>))
+
+### Fake News Detection
+![Fake News Result](screenshots/![alt text](<fake news.png>))
+
 
 ## 🛠️ Tech Stack
 
