@@ -1,0 +1,370 @@
+/* ============================================================
+   FAKE NEWS DETECTION AI - PROFESSIONAL STYLESHEET
+   ============================================================ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap');
+
+/* -----------------------------
+   Global Main Content Styles
+   ----------------------------- */
+.main, .main * {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main App Background - Dark Gradient */
+.stApp {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    background-attachment: fixed;
+}
+
+/* Main Container */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* -----------------------------
+   Main Title Styling
+   ----------------------------- */
+.main h1 {
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 3rem !important;
+    text-align: center;
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem !important;
+    text-shadow: 0 4px 20px rgba(0, 201, 255, 0.3);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.main h3 {
+    color: #92fe9d !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Main Markdown Text */
+.main .stMarkdown p {
+    color: #e0e6ed !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* -----------------------------
+   Text Area Styling
+   ----------------------------- */
+.stTextArea label {
+    color: #ffffff !important;
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.stTextArea textarea {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(0, 201, 255, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stTextArea textarea:focus {
+    border-color: #00c9ff !important;
+    box-shadow: 0 0 20px rgba(0, 201, 255, 0.4) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.stTextArea textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-style: italic;
+}
+
+/* -----------------------------
+   Button Styling
+   ----------------------------- */
+.main .stButton > button {
+    background: linear-gradient(135deg, #00c9ff 0%, #0077b6 100%) !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    padding: 0.8rem 2rem !important;
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 201, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.main .stButton > button:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 30px rgba(0, 201, 255, 0.5) !important;
+    background: linear-gradient(135deg, #92fe9d 0%, #00c9ff 100%) !important;
+}
+
+.main .stButton > button:active {
+    transform: translateY(-1px) !important;
+}
+
+/* -----------------------------
+   Divider Styling
+   ----------------------------- */
+.main hr {
+    border: none !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, rgba(0, 201, 255, 0.5), transparent) !important;
+    margin: 2rem 0 !important;
+}
+
+/* -----------------------------
+   Result Cards (Real/Fake)
+   ----------------------------- */
+.result-card {
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1.5rem 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.6s ease-out;
+    border: 2px solid;
+}
+
+/* Real News Card */
+.result-card.real-news {
+    background: linear-gradient(135deg, rgba(146, 254, 157, 0.15), rgba(0, 201, 255, 0.15));
+    border-color: #92fe9d;
+    box-shadow: 0 8px 32px rgba(146, 254, 157, 0.3);
+}
+
+/* Fake News Card */
+.result-card.fake-news {
+    background: linear-gradient(135deg, rgba(255, 82, 82, 0.15), rgba(244, 67, 54, 0.15));
+    border-color: #ff5252;
+    box-shadow: 0 8px 32px rgba(255, 82, 82, 0.3);
+}
+
+.result-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: bounce 1s ease-out;
+}
+
+.result-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.result-subtitle {
+    color: #e0e6ed;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.confidence-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.confidence-text strong {
+    color: #00c9ff;
+    font-size: 1.4rem;
+}
+
+/* -----------------------------
+   Progress Bar Styling
+   ----------------------------- */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #00c9ff, #92fe9d) !important;
+    border-radius: 10px;
+}
+
+.stProgress > div > div > div {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px;
+}
+
+/* -----------------------------
+   Metric Cards
+   ----------------------------- */
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #cbd5e0 !important;
+    font-size: 1rem !important;
+}
+
+[data-testid="stMetricDelta"] {
+    font-size: 1rem !important;
+}
+
+/* -----------------------------
+   Alert Messages
+   ----------------------------- */
+.main .stAlert {
+    border-radius: 12px !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 500 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.main .stSuccess {
+    background: linear-gradient(135deg, rgba(146, 254, 157, 0.15), rgba(0, 201, 255, 0.15)) !important;
+    border-left: 5px solid #92fe9d !important;
+    color: #ffffff !important;
+}
+
+.main .stWarning {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.15)) !important;
+    border-left: 5px solid #ffc107 !important;
+    color: #ffffff !important;
+}
+
+.main .stError {
+    background: linear-gradient(135deg, rgba(255, 82, 82, 0.15), rgba(244, 67, 54, 0.15)) !important;
+    border-left: 5px solid #ff5252 !important;
+    color: #ffffff !important;
+}
+
+.main .stInfo {
+    background: linear-gradient(135deg, rgba(0, 201, 255, 0.15), rgba(0, 119, 182, 0.15)) !important;
+    border-left: 5px solid #00c9ff !important;
+    color: #ffffff !important;
+}
+
+/* -----------------------------
+   Expander Styling
+   ----------------------------- */
+.main .streamlit-expanderHeader {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.main .streamlit-expanderContent {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 0 0 10px 10px !important;
+    color: #e0e6ed !important;
+}
+
+/* -----------------------------
+   Caption Styling
+   ----------------------------- */
+.main .stCaption {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 0.9rem !important;
+}
+
+/* -----------------------------
+   Header Transparent
+   ----------------------------- */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+/* -----------------------------
+   Custom Footer
+   ----------------------------- */
+.custom-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    padding: 2rem 0 1rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(0, 201, 255, 0.2);
+    line-height: 1.8;
+}
+
+.custom-footer strong {
+    color: #00c9ff;
+}
+
+/* -----------------------------
+   Animations
+   ----------------------------- */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* -----------------------------
+   Hide Streamlit Menu & Footer
+   ----------------------------- */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+/* -----------------------------
+   Scrollbar Styling
+   ----------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00c9ff, #0077b6);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #92fe9d, #00c9ff);
+}
