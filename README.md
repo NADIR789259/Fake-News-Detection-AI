@@ -8,7 +8,8 @@ A machine learning web app that classifies news articles as **Real** or **Fake**
 ![Accuracy](https://img.shields.io/badge/Accuracy-97%25-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-🔗 **Live Demo:** _add your Streamlit Community Cloud link here after deploying_
+
+🔗 **Live Demo:** [fake-news-detector-nadir.streamlit.app](https://fake-news-detector-nadir.streamlit.app/)
 🔗 **Portfolio:** [nadir789259.github.io](https://nadir789259.github.io)
 
 ---
